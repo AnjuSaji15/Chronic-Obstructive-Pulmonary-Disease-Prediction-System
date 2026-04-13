@@ -4,45 +4,6 @@ An AI-powered early detection system for **Chronic Obstructive Pulmonary Disease
 
 ---
 
-## 📁 Project Structure
-
-```
-COPD-Prediction-System/
-├── app/
-│   └── copd.py                  # Streamlit web application (3 tabs)
-├── data/
-│   ├── images/
-│   │   ├── train/
-│   │   │   ├── Emphysema/       # 2050 training images
-│   │   │   └── Normal/          # 2671 training images
-│   │   └── test/
-│   │       ├── Emphysema/       # 250 test images
-│   │       └── Normal/          # 300 test images
-│   └── spirometry_dataset.csv   # 1000 patient spirometry records
-├── models/
-│   ├── ann_model.h5             # Trained ANN (clinical data)
-│   ├── cnn_model.h5             # Trained CNN (lung images)
-│   ├── copd_cnn_model.h5        # Alternative CNN checkpoint
-│   └── scaler.pkl               # StandardScaler for ANN inputs
-├── notebooks/
-│   ├── ann_training.ipynb       # ANN training pipeline
-│   ├── cnn_training.ipynb       # CNN training pipeline
-│   └── fusion_model.ipynb       # Fusion model experiments
-├── docs/
-│   ├── project report.docx
-│   ├── Some infmn.docx
-│   └── Teal and Purple Modern Medical Chronic Disease Presentation.pptx
-├── research_papers/             # 27 reference PDFs
-├── config.py                    # Centralised paths & constants
-├── utils.py                     # Shared prediction & helper functions
-├── requirements.txt
-├── setup.bat                    # One-click Windows setup & launch
-├── .gitignore
-└── README.md
-```
-
----
-
 ## 🤖 Models
 
 | Model | Input | Architecture | Accuracy |
